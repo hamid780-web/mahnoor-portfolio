@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import {
     Sheet,
@@ -11,13 +12,20 @@ import Image from "next/image";
 import Link from "next/link";
 import { VscThreeBars } from "react-icons/vsc";
 import { MdHome } from "react-icons/md";
-
-
+import { useEffect, useState } from 'react';
 import { IconType } from "react-icons";
 import { FaInfoCircle, FaServicestack, FaCode, FaEnvelope } from "react-icons/fa";
-
-
 const NavbarMobile = () => {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 50); // 50px scroll ke baad change
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     interface link {
         id: number;
         title: string;
@@ -58,7 +66,7 @@ const NavbarMobile = () => {
         },
     ];
     return (
-        <nav className="py-5 bg-[#AB702517] w-full flex  lg:hidden  top-0 left-0 right-0 z-50 border-b border-primary">
+        <nav className={`py-5 bg-[#AB702517] w-full flex  lg:hidden  fixed top-0 left-0 right-0 z-50 border-b border-primary ${scrolled ? "bg-black" : "bg-[#AB702517]"}`}>
             <div className="main-cantainer">
                 <div className="flex items-center justify-between w-full">
                     <Sheet>

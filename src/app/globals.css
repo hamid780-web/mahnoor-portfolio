@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 .main-cantainer {
-  @apply xl:px-[100px] lg:px-20 md:px-[60px] sm:px-10   px-5 w-full;
+  @apply xl:px-[100px] lg:px-20  sm:px-10   px-5 w-full;
 }
 
 @theme inline {

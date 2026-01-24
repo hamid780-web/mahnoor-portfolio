@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link';
-import {FaGithub, FaLinkedin, FaFacebook, FaYoutube} from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaFacebook, FaYoutube } from "react-icons/fa";
 type footerItem = {
     title?: string;
     icon?: React.ReactNode;
@@ -16,10 +16,14 @@ const footerItems: footerItem[] = [
         title: "Contact"
     },
     {
-        icon: <FaGithub/>}, {
-        icon: <FaLinkedin/>}, {
-        icon: <FaFacebook/>}, {
-        icon: <FaYoutube/>},
+        icon: <FaGithub />
+    }, {
+        icon: <FaLinkedin />
+    }, {
+        icon: <FaFacebook />
+    }, {
+        icon: <FaYoutube />
+    },
 ];
 
 const FooterDasktop = () => {
@@ -33,27 +37,27 @@ const FooterDasktop = () => {
                             <div className="flex gap-[40px] xl:gap-[74px]">
 
                                 {
-                                footerItems.filter((item) => item.title).map((item, index) => (
-                                    <Link href="/"
-                                        key={index}
-                                        className=" hover:text-primary font-poppins font-normal tracking-0% leading-[100%] text-[16px]">
-                                        {
-                                        item.title
-                                    } </Link>
-                                ))
-                            } </div>
+                                    footerItems.filter((item) => item.title).map((item, index) => (
+                                        <Link href="/"
+                                            key={index}
+                                            className=" hover:text-primary font-poppins font-normal tracking-0% leading-[100%] text-[16px]">
+                                            {
+                                                item.title
+                                            } </Link>
+                                    ))
+                                } </div>
 
                             <div className="flex xl:gap-10 gap-6 text-2xl">
                                 {
-                                footerItems.filter((item) => item.icon).map((item, index) => (
-                                    <Link href="/"
-                                        key={index}
-                                        className="hover:text-primary">
-                                        {
-                                        item.icon
-                                    } </Link>
-                                ))
-                            } </div>
+                                    footerItems.filter((item) => item.icon).map((item, index) => (
+                                        <Link href="/"
+                                            key={index}
+                                            className="hover:text-primary">
+                                            {
+                                                item.icon
+                                            } </Link>
+                                    ))
+                                } </div>
                         </div>
                         <div className='border-t border-[#2B3D51] w-full flex items-center justify-between pt-[52px]'>
                             <div>
