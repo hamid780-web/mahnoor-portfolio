@@ -32,7 +32,7 @@ const footerItems: footerItem[] = [
 
 const FooterMobile = () => {
 	return (
-		<footer className='flex lg:hidden xl:py-[72px] py-14 w-full border-t border-[#FFFFFF]  bg-[#121212]'>
+		<footer className='flex lg:hidden xl:py-[72px] py-14 w-full border-t-[1px] border-[#FFFFFF]  bg-[#121212]'>
 			<div className='main-cantainer '>
 				<div className='flex items-center flex-col justify-center w-full gap-5'>
 					<div>

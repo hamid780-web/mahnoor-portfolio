@@ -66,7 +66,7 @@ const NavbarMobile = () => {
         },
     ];
     return (
-        <nav className={`py-5 bg-[#AB702517] w-full flex  lg:hidden  fixed top-0 left-0 right-0 z-50 border-b border-primary ${scrolled ? "bg-black" : "bg-[#AB702517]"}`}>
+        <nav className={`py-5  w-full flex  lg:hidden  fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-primary ${scrolled ? "bg-black" : "bg-[#AB702517]"}`}>
             <div className="main-cantainer">
                 <div className="flex items-center justify-between w-full">
                     <Sheet>

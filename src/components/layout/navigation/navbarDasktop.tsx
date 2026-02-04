@@ -53,7 +53,7 @@ const NavbarDasktop = () => {
         },
     ];
     return (
-        <nav className={`py-5  w-full hidden  lg:flex   fixed top-0 left-0 right-0 z-50 border-b border-primary ${scrolled ? 'bg-black' : 'bg-[#AB702517]'}`}>
+        <nav className={`py-5  w-full hidden  lg:flex   fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-primary ${scrolled ? 'bg-black' : 'bg-[#AB702517]'}`}>
             <div className='main-cantainer'>
                 <div className='flex justify-between items-center w-full'>
                     <div><Image src='images/logo.svg' alt='logo' width={106} height={32} /></div>

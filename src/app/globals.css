@@ -3,8 +3,25 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.section-cantainer {
+  @apply w-full py-[31px]  xl:mb-[100px] lg:mb-20 sm:mb-10 mb-5 border-t-[1.62px] border-primary bg-[#AB702517];
+}
 .main-cantainer {
   @apply xl:px-[100px] lg:px-20  sm:px-10   px-5 w-full;
+}
+.heading {
+  @apply font-poppins font-semibold xl:text-[40px] xl:leading-[48px] lg:text-[35px] lg:leading-[42px] text-[25px] leading-[32px] sm:text-[30px] sm:leading-[37px]  tracking-normal text-center;
+}
+.sub-title {
+  @apply font-poppins font-normal xl:text-[14px] text-[12px] text-center  leading-[16.99px]  tracking-normal bg-[#EA952A75] rounded-[60px] xl:p-2.5 p-2;
+}
+
+.services-swiper .swiper-pagination-bullet {
+  @apply bg-white w-[8px] h-[8px]  lg:w-[14px] lg:h-[14px] xl:w-[18px] xl:h-[18px]  opacity-100;
+}
+
+.services-swiper .swiper-pagination-bullet-active {
+  @apply bg-primary w-[8px] h-[8px] sm:w-[10px] sm:h-[10px] lg:w-[14px] lg:h-[14px] xl:w-[18px] xl:h-[18px] scale-110;
 }
 
 @theme inline {
@@ -61,7 +78,7 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #EA952A;  
+  --primary: #ea952a;
   --primary-foreground: oklch(0.985 0 0);
   --secondary: #1c1c1c;
   --secondary-foreground: oklch(0.205 0 0);

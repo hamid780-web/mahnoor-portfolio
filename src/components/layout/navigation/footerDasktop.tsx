@@ -28,7 +28,7 @@ const footerItems: footerItem[] = [
 
 const FooterDasktop = () => {
     return (
-        <footer className='xl:py-[72px] py-14 w-full border-t border-[#FFFFFF]  bg-[#121212] hidden lg:flex'>
+        <footer className='xl:py-[72px] py-14 w-full border-t-[1px] border-[#FFFFFF]  bg-[#121212] hidden lg:flex'>
             <div className='main-cantainer'>
                 <div className='flex items-center flex-col justify-center w-full'>
                     <div className='flex flex-col items-center justify-center w-full'>
