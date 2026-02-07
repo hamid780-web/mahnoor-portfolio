@@ -3,6 +3,8 @@ import type { Metadata }
 import { Poppins, Inter, } from "next/font/google";
 import "./globals.css";
 import Layout from "@/components/layout";
+import AOSWapper from "@/components/ui/aos";
+
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -38,9 +40,9 @@ export default function RootLayout({ children }: Readonly<{
                 ` ${poppins.variable
                 }  ,${inter.variable
                 }`
-            }>
+            }><AOSWapper />
                 <Layout>{children}</Layout>
             </body>
-        </html>
+        </html >
     );
 }

@@ -6,13 +6,8 @@ const About = () => {
   return (
     <section className="section-cantainer relative">
       <div className="main-cantainer">
-        <div className="absolute top-0 left-0 lg:flex hidden ">
-          <Image
-            src="/images/about-1.png"
-            alt="logo"
-            width={201.5}
-            height={257}
-          />
+        <div className="absolute top-[-170px] left-0 z-0  hidden lg:flex max-w-[213px] rotate-180">
+          <Image src="/images/bg-img.png" alt="logo" width={427} height={427} />
         </div>
         <div className="flex justify-between  w-full flex-col-reverse lg:flex-row gap-10 lg:gap-0">
           <div className="w-full flex  ">

@@ -40,7 +40,13 @@
     "src/view/home/coreCard.jsx",
     "src/view/home/about.jsx",
     "src/view/home/servicesSlider.jsx",
-    "src/app/layout.Jsx"
+    "src/app/layout.tsx",
+    "src/components/layout/navigation/footerMobile.jsx",
+    "src/components/layout/navigation/footerDasktop.jsx",
+    "src/components/layout/navigation/navbarMobile.jsx",
+    "src/components/layout/navigation/navbarDasktop.jsx",
+    "src/components/layout/navigation/nav.jsx",
+    "src/components/layout/navigation/index.jsx"
   ],
   "exclude": [
     "node_modules"
