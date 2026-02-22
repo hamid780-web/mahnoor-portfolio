@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
         <div className="absolute top-[-170px] left-0 z-0  hidden lg:flex max-w-[213px] rotate-180">
           <Image src="/images/bg-img.png" alt="logo" width={427} height={427} />
         </div>
-        {/* add gap on lg */}
+
         <div className="flex justify-between  w-full flex-col-reverse lg:flex-row gap-10 lg:gap-0">
           <div className="w-full flex  ">
             <div className="lg:max-w-[457px] w-full">
@@ -27,9 +28,11 @@ const About = () => {
                 flawlessly but also looks stunning.
               </p>
               <div>
-                <Button className="font-inter font-medium md:text-[20px]  md:leading-[29px] text-[14px] leading-[20px] tracking-normal text-center bg-primary text-black hover:bg-primary/90 ">
-                  Learn More
-                </Button>
+                <Link href="/">
+                  <Button className="font-inter font-medium md:text-[20px]  md:leading-[29px] text-[14px] leading-[20px] tracking-normal text-center bg-primary text-black hover:bg-primary/90 ">
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

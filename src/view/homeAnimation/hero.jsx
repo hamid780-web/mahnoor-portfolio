@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { MdOutlineFileDownload } from "react-icons/md";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -29,15 +30,19 @@ const Hero = () => {
                 data-aos="fade-right"
                 className="flex   items-center gap-2.5"
               >
-                <Button
-                  data-aos="fade-right"
-                  className=" border border-white font-inter font-semibold md:text-[16px]  md:leading-[24px] text-[14px] leading-[20px] tracking-normal text-center "
-                >
-                  <MdOutlineFileDownload size={20} /> Download CV
-                </Button>
-                <Button className="font-inter font-semibold md:text-[16px]  md:leading-[24px] text-[14px] leading-[20px] tracking-normal text-center bg-primary text-black hover:bg-primary/90 ">
-                  Hire Me Now
-                </Button>
+                <Link href="/">
+                  <Button
+                    data-aos="fade-right"
+                    className=" border border-white font-inter font-semibold md:text-[16px]  md:leading-[24px] text-[14px] leading-[20px] tracking-normal text-center "
+                  >
+                    <MdOutlineFileDownload size={20} /> Download CV
+                  </Button>
+                </Link>
+                <Link href="/">
+                  <Button className="font-inter font-semibold md:text-[16px]  md:leading-[24px] text-[14px] leading-[20px] tracking-normal text-center bg-primary text-black hover:bg-primary/90 ">
+                    Hire Me Now
+                  </Button>
+                </Link>
               </div>
               <div className="pl-80 pt-7 lg:flex hidden">
                 <Image

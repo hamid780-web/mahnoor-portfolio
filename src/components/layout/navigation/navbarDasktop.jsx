@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-// import { data } from "framer-motion/client";
 
 const NavbarDasktop = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -47,13 +46,13 @@ const NavbarDasktop = () => {
   ];
   return (
     <nav
-      className={`py-5  w-full hidden  lg:flex   fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-primary ${scrolled ? "bg-black" : "bg-[#AB702517]"}`}
+      data-aos="fade-down"
+      className={`py-5  w-full hidden  lg:flex items-center justify-center  fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-primary ${scrolled ? "bg-black" : "bg-[#AB702517]"}`}
     >
       <div className="main-cantainer">
         <div className="flex justify-between items-center w-full">
-          {/* Add / before images  */}
           <div>
-            <Image src="images/logo.svg" alt="logo" width={106} height={32} />
+            <Image src="/images/logo.svg" alt="logo" width={106} height={32} />
           </div>
 
           <div className="flex items-center gap-[38px]">
@@ -72,9 +71,11 @@ const NavbarDasktop = () => {
             })}
           </div>
           {/* Wrap All Button with Link */}
-          <Button className="text-[15px] font-semibold leading-[24px] tracking-0% text-center font-poppins bg-primary text-black hover:bg-primary/90">
-            Hire Me
-          </Button>
+          <Link href="/">
+            <Button className="text-[15px] font-semibold leading-[24px] tracking-0% text-center font-poppins bg-primary text-black hover:bg-primary/90">
+              Hire Me
+            </Button>
+          </Link>
         </div>
       </div>
     </nav>

@@ -66,6 +66,7 @@ const NavbarMobile = () => {
   ];
   return (
     <nav
+      data-aos="fade-down"
       className={`py-5  w-full flex  lg:hidden  fixed top-0 left-0 right-0 z-50 border-b-[1.5px] border-primary ${scrolled ? "bg-black" : "bg-[#AB702517]"}`}
     >
       <div className="main-cantainer">
@@ -73,12 +74,7 @@ const NavbarMobile = () => {
           <Sheet>
             <div className=" flex  items-center">
               {/* reduce logo size */}
-              <Image
-                src="/Images/logo.svg"
-                alt="logo"
-                width={106}
-                height={32}
-              />
+              <Image src="/Images/logo.svg" alt="logo" width={90} height={32} />
             </div>
 
             <SheetTrigger className="p-2 rounded-lg bg-primary hover:text-white">
@@ -93,7 +89,7 @@ const NavbarMobile = () => {
                     <Image
                       src="/Images/logo.svg"
                       alt="logo"
-                      width={106}
+                      width={90}
                       height={32}
                     />
                   </div>

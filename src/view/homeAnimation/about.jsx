@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -35,9 +36,11 @@ const About = () => {
                 flawlessly but also looks stunning.
               </p>
               <div data-aos="fade-right">
-                <Button className="font-inter font-medium md:text-[20px]  md:leading-[29px] text-[14px] leading-[20px] tracking-normal text-center bg-primary text-black hover:bg-primary/90 ">
-                  Learn More
-                </Button>
+                <Link href="/">
+                  <Button className="font-inter font-medium md:text-[20px]  md:leading-[29px] text-[14px] leading-[20px] tracking-normal text-center bg-primary text-black hover:bg-primary/90 ">
+                    Learn More
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -72,22 +75,24 @@ const About = () => {
                 data-aos="fade-left"
                 className="absolute max-w-[110px] max-h-[110px] sm:max-w-[203px] sm:max-h-[203px] w-full h-full rounded-full bg-black flex items-center justify-center"
               >
-                <Image
-                  src="/images/about-4.png"
-                  alt="logo"
-                  width={198.29}
-                  height={198.25}
-                />
-                <div className="absolute max-w-[137.31px] flex flex-col items-center justify-center text-center ">
+                <div className="w-full h-full rounded-full flex items-center justify-center bg-[#AB702517]">
                   <Image
-                    src="/images/about-logo.svg"
+                    src="/images/about-4.png"
                     alt="logo"
-                    width={46}
-                    height={46}
+                    width={198.29}
+                    height={198.25}
                   />
-                  <p className="font-poppins text-[16px] leading-[22px] font-medium tracking-normal hidden sm:flex">
-                    15+ Projects Completed
-                  </p>
+                  <div className="absolute max-w-[137.31px] flex flex-col items-center justify-center text-center ">
+                    <Image
+                      src="/images/about-logo.svg"
+                      alt="logo"
+                      width={46}
+                      height={46}
+                    />
+                    <p className="font-poppins text-[16px] leading-[22px] font-medium tracking-normal hidden sm:flex">
+                      15+ Projects Completed
+                    </p>
+                  </div>
                 </div>
               </div>
 
