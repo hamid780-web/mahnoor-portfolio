@@ -42,6 +42,7 @@ const ServicesSlider = () => {
           modules={[Navigation, Pagination]}
           centeredSlides
           slidesPerView={1}
+          initialSlide={1}
           navigation={{
             prevEl: ".swiper-prev",
             nextEl: ".swiper-next",

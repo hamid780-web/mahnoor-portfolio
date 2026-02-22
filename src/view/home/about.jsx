@@ -9,6 +9,7 @@ const About = () => {
         <div className="absolute top-[-170px] left-0 z-0  hidden lg:flex max-w-[213px] rotate-180">
           <Image src="/images/bg-img.png" alt="logo" width={427} height={427} />
         </div>
+        {/* add gap on lg */}
         <div className="flex justify-between  w-full flex-col-reverse lg:flex-row gap-10 lg:gap-0">
           <div className="w-full flex  ">
             <div className="lg:max-w-[457px] w-full">
@@ -54,22 +55,24 @@ const About = () => {
               </div>
 
               <div className="absolute max-w-[110px] max-h-[110px] sm:max-w-[203px] sm:max-h-[203px] w-full h-full rounded-full bg-black flex items-center justify-center">
-                <Image
-                  src="/images/about-4.png"
-                  alt="logo"
-                  width={198.29}
-                  height={198.25}
-                />
-                <div className="absolute max-w-[137.31px] flex flex-col items-center justify-center text-center ">
+                <div className="w-full h-full rounded-full flex items-center justify-center bg-[#AB702517]">
                   <Image
-                    src="/images/about-logo.svg"
+                    src="/images/about-4.png"
                     alt="logo"
-                    width={46}
-                    height={46}
+                    width={198.29}
+                    height={198.25}
                   />
-                  <p className="font-poppins text-[16px] leading-[22px] font-medium tracking-normal hidden sm:flex">
-                    15+ Projects Completed
-                  </p>
+                  <div className="absolute max-w-[137.31px] flex flex-col items-center justify-center text-center ">
+                    <Image
+                      src="/images/about-logo.svg"
+                      alt="logo"
+                      width={46}
+                      height={46}
+                    />
+                    <p className="font-poppins text-[16px] leading-[22px] font-medium tracking-normal hidden sm:flex">
+                      15+ Projects Completed
+                    </p>
+                  </div>
                 </div>
               </div>
 

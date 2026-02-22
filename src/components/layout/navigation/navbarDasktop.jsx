@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
-import { data } from "framer-motion/client";
+// import { data } from "framer-motion/client";
 
 const NavbarDasktop = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -51,6 +51,7 @@ const NavbarDasktop = () => {
     >
       <div className="main-cantainer">
         <div className="flex justify-between items-center w-full">
+          {/* Add / before images  */}
           <div>
             <Image src="images/logo.svg" alt="logo" width={106} height={32} />
           </div>
@@ -70,6 +71,7 @@ const NavbarDasktop = () => {
               );
             })}
           </div>
+          {/* Wrap All Button with Link */}
           <Button className="text-[15px] font-semibold leading-[24px] tracking-0% text-center font-poppins bg-primary text-black hover:bg-primary/90">
             Hire Me
           </Button>

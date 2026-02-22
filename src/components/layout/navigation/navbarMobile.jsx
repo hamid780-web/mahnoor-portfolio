@@ -72,6 +72,7 @@ const NavbarMobile = () => {
         <div className="flex items-center justify-between w-full">
           <Sheet>
             <div className=" flex  items-center">
+              {/* reduce logo size */}
               <Image
                 src="/Images/logo.svg"
                 alt="logo"
@@ -88,6 +89,7 @@ const NavbarMobile = () => {
               <SheetHeader>
                 <SheetTitle>
                   <div className="p-[26px] border-b border-primary">
+                    {/* reduce logo size */}
                     <Image
                       src="/Images/logo.svg"
                       alt="logo"
