@@ -42,25 +42,25 @@ const NavbarMobile = () => {
     {
       id: 2,
       title: "About",
-      url: "/about",
+      url: "#about",
       icon: FaInfoCircle,
     },
     {
       id: 3,
       title: "Services",
-      url: "/services",
+      url: "#services",
       icon: FaServicestack,
     },
     {
       id: 4,
       title: "Portfolio",
-      url: "/portfolio",
+      url: "#portfolio",
       icon: FaCode,
     },
     {
       id: 5,
       title: "Contact",
-      url: "/contact",
+      url: "#contact",
       icon: FaEnvelope,
     },
   ];

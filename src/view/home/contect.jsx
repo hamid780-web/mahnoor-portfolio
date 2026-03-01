@@ -9,7 +9,7 @@ import ContectSlider from "./contectSlider.jsx";
 
 const Contect = () => {
   return (
-    <section className="section-cantainer relative">
+    <section id="contact" className="section-cantainer relative">
       <div className="main-cantainer">
         <div className="flex flex-col items-center justify-center w-full">
           <div className="flex items-center flex-col justify-center w-full gap-4 lg:pb-[51px] pb-8">

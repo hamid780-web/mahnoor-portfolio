@@ -26,22 +26,22 @@ const NavbarDasktop = () => {
     {
       id: 2,
       title: "About",
-      url: "/about",
+      url: "#about",
     },
     {
       id: 3,
       title: "Services",
-      url: "/services",
+      url: "#services",
     },
     {
       id: 4,
       title: "Portfolio",
-      url: "/portfolio",
+      url: "#portfolio",
     },
     {
       id: 5,
       title: "Contact",
-      url: "/contact",
+      url: "#contact",
     },
   ];
   return (

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const About = () => {
   return (
-    <section className="section-cantainer relative">
+    <section id="about" className="section-cantainer relative">
       <div className="main-cantainer">
         <div className="absolute top-[-170px] left-0 z-0  hidden lg:flex max-w-[213px] rotate-180">
           <Image src="/images/bg-img.png" alt="logo" width={427} height={427} />
@@ -37,27 +37,31 @@ const About = () => {
             </div>
           </div>
           <div className="w-full flex items-center justify-center relative">
-            <div className=" w-full flex flex-col items-center justify-center gap-8 xl:gap-0 ">
-              <div className="grid grid-cols-2 gap-8 xl:gap-0">
+            <div className=" w-full flex flex-col items-center justify-center  xl:gap-0 ">
+              <div className="grid grid-cols-2  xl:gap-0">
                 <div className="flex items-center justify-center">
-                  <Image
-                    src="/images/about-3.png"
-                    alt="logo"
-                    width={243}
-                    height={255}
-                  />
+                  <div className="max-w-[250px] max-h-[262px] sm:max-w-[243px] sm:max-h-[255px] w-full h-full">
+                    <Image
+                      src="/images/about-3.png"
+                      alt="logo"
+                      width={250}
+                      height={262}
+                    />
+                  </div>
                 </div>
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/images/about-2.png"
-                    alt="logo"
-                    width={73.77}
-                    height={106.2}
-                  />
+                <div className="flex items-center justify-center ">
+                  <div className="max-w-[50px] max-h-[70px] sm:max-w-[73.77px] sm:max-h-[106.2px] w-full h-full">
+                    <Image
+                      src="/images/about-2.png"
+                      alt="logo"
+                      width={73.77}
+                      height={106.2}
+                    />
+                  </div>
                 </div>
               </div>
 
-              <div className="absolute max-w-[110px] max-h-[110px] sm:max-w-[203px] sm:max-h-[203px] w-full h-full rounded-full bg-black flex items-center justify-center">
+              <div className="absolute max-w-[140px] max-h-[140px] sm:max-w-[203px] sm:max-h-[203px] w-full h-full rounded-full bg-black flex items-center justify-center ">
                 <div className="w-full h-full rounded-full flex items-center justify-center bg-[#AB702517]">
                   <Image
                     src="/images/about-4.png"
@@ -79,22 +83,26 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-8 xl:gap-0">
-                <div className="flex items-center justify-center">
-                  <Image
-                    src="/images/about-2.png"
-                    alt="logo"
-                    width={73.77}
-                    height={106.2}
-                  />
+              <div className="grid grid-cols-2  xl:gap-0">
+                <div className="flex items-center justify-center ">
+                  <div className="max-w-[50px] max-h-[70px] sm:max-w-[73.77px] sm:max-h-[106.2px] w-full h-full">
+                    <Image
+                      src="/images/about-2.png"
+                      alt="logo"
+                      width={73.77}
+                      height={106.2}
+                    />
+                  </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <Image
-                    src="/images/about-5.png"
-                    alt="logo"
-                    width={243}
-                    height={255}
-                  />
+                  <div className="max-w-[250px] max-h-[262px] sm:max-w-[243px] sm:max-h-[255px] w-full h-full">
+                    <Image
+                      src="/images/about-5.png"
+                      alt="logo"
+                      width={250}
+                      height={262}
+                    />
+                  </div>
                 </div>
               </div>
             </div>

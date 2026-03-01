@@ -28,7 +28,7 @@ const services = [
 
 const ServicesSlider = () => {
   return (
-    <section className="section-cantainer relative">
+    <section id="services" className="section-cantainer relative">
       <div className="main-cantainer">
         <div className="absolute top-2.5 right-0 z-0  hidden lg:flex max-w-[192px]">
           <Image src="/images/bg-img.png" alt="logo" width={192} height={427} />

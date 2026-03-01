@@ -29,7 +29,7 @@ const RecentWork = () => {
     },
   ];
   return (
-    <section className="section-cantainer relative">
+    <section id="portfolio" className="section-cantainer relative">
       <div className="absolute top-0 left-0 z-0  hidden lg:flex max-w-[213px] rotate-180">
         <Image src="/images/bg-img.png" alt="logo" width={427} height={427} />
       </div>
